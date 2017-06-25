@@ -46,7 +46,6 @@ public class RemoteService extends Service {
 		serviceHandler = new Handler();
 		serviceHandler.postDelayed(myTask, 1000L);
 		Log.d(getClass().getSimpleName(), "onStart()");
-		int i = 100/0;
 	}
 	
 	class Task implements Runnable {
@@ -54,6 +53,7 @@ public class RemoteService extends Service {
 			++counter;
 			serviceHandler.postDelayed(this,1000L);
 			Log.i(getClass().getSimpleName(), "Incrementing counter in the run method");
+			int i = 100/0; //this should throw exception in service
 		}
 	}
 	

@@ -1,6 +1,7 @@
 package com.collabera.labs.sai;
 
 import android.app.Activity;
+import android.app.ActivityManager;
 import android.content.ComponentName;
 import android.content.Context;
 import android.content.Intent;
@@ -15,6 +16,8 @@ import android.widget.Button;
 import android.widget.TextView;
 import android.widget.Toast;
 
+import java.util.List;
+
 public class RemoteServiceClient extends Activity {
     
 	private IMyRemoteService remoteService;
@@ -25,6 +28,9 @@ public class RemoteServiceClient extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+
+
+
         setContentView(R.layout.remoteserviceclient);
         
         Button start = (Button)findViewById(R.id.startButton);
@@ -65,6 +71,8 @@ public class RemoteServiceClient extends Activity {
 
    
     }
+
+
     
     private void startService(){
        		if (started) {
