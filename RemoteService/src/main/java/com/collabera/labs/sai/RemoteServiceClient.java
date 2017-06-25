@@ -28,8 +28,7 @@ public class RemoteServiceClient extends Activity {
     @Override
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-
-
+        Log.d("Ashish","recreating Activity");
 
         setContentView(R.layout.remoteserviceclient);
         
