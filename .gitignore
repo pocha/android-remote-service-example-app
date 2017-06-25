@@ -6,6 +6,6 @@
 /.idea/libraries
 .DS_Store
 /build
-build/
+/RemoteService/build
 /captures
 .externalNativeBuild
